@@ -11,7 +11,7 @@ export function Players() {
             <Header showBackButton/>
             <Highlight
                 title="Nome da turma "
-                subtitle="adiciona a a galera e separe os times"           
+                subtitle="adiciona a  galera e separe os times"           
             />
 
             <ButtonIcon/>
