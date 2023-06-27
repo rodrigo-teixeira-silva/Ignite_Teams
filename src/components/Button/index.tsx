@@ -8,7 +8,8 @@ type Props = TouchableOpacityProps & {
 }
 
 
-export function Button({title, type = `PRIMARY`, ...rest}: Props){
+export function Button({title, type = `PRIMARY`, ...rest }: Props) {
+
     return(
         <Container
         type={ type }
@@ -19,6 +20,5 @@ export function Button({title, type = `PRIMARY`, ...rest}: Props){
 
         </Container>
     );
-
 
 }

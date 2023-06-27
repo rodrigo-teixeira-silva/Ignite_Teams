@@ -1,5 +1,7 @@
 import { TouchableOpacity } from 'react-native';
-import styled from 'styled-components/native';
+
+import styled,{css} from 'styled-components/native';
+
 
 export type ButtonTypeStyleProps = 'PRIMARY' | 'SECONDARY';
 
@@ -13,7 +15,7 @@ flex: 1;
 min-height: 56;
 max-height: 56;
 
- background-color: ${({ theme, type }) => type === 'PRIMARY' ? theme.COLORS.GREEN_700 : theme.COLORS.RED_DARK };
+background-color: ${({ theme, type }) => type === 'PRIMARY' ? theme.COLORS.GREEN_700 : theme.COLORS.RED_DARK };
 
 border-radius: 6px;
 
