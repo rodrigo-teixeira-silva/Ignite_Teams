@@ -18,6 +18,7 @@ export  function Groups() {
   function handleNewGroup() {
     navigation.navigate('new');
   }
+
   return (
     <Container>
       <Header />
