@@ -5,7 +5,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 export type ButtonIconTypesStyleProps = 'PRIMARY' | 'SECONDARY';
 
 type Props = {
-    type: ButtonIconTypesStyleProps
+    type: ButtonIconTypesStyleProps;
 }
 
 export const Container = styled(TouchableOpacity)`
