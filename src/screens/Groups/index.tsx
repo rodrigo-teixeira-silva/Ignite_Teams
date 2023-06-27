@@ -19,8 +19,6 @@ export  function Groups() {
     navigation.navigate('new');
   }
 
-
- 
   return (
     <Container>
       <Header />
