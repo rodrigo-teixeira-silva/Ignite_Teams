@@ -4,8 +4,6 @@ import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 import { groupGetAll } from '@storage/group/groupGetAll';
 
-import { useNavigation } from '@react-navigation/native';
-
 import { Header } from '@components/Header';
 import { Highlight } from '@components/Highlight';
 import { GroupCards } from '@components/GroupsCard'
