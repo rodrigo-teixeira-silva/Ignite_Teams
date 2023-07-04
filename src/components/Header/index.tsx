@@ -9,6 +9,7 @@ type Props = {
 }
 
 export function Header({ showBackButton = false}: Props){
+
     const navigation = useNavigation();
 
    function handleGoBack(){
@@ -19,7 +20,10 @@ export function Header({ showBackButton = false}: Props){
         <Container>
          {
         showBackButton &&
+
         <BackButton onPress={handleGoBack}>
+
+        <BackButton>
             <BackIcon/>
         </BackButton>
          }

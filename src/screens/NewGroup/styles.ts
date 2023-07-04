@@ -1,4 +1,3 @@
-
 import { SafeAreaView } from "react-native-safe-area-context";import styled from "styled-components/native";
 import { UsersThree} from 'phosphor-react-native'
 import { Colors } from "react-native/Libraries/NewAppScreen";

@@ -4,6 +4,8 @@ import { useNavigation, useFocusEffect } from '@react-navigation/native';
 
 import { groupGetAll } from '@storage/group/groupGetAll';
 
+import { useNavigation } from '@react-navigation/native';
+
 import { Header } from '@components/Header';
 import { Highlight } from '@components/Highlight';
 import { GroupCards } from '@components/GroupsCard'
@@ -14,6 +16,7 @@ import { Container } from './styles';
 
 
 export  function Groups() {
+
   const [groups, setGroups] = useState<string[]>([]);
 
   const navigation = useNavigation();
@@ -21,6 +24,7 @@ export  function Groups() {
   function handleNewGroup() {
     navigation.navigate('new');
   }
+
 
   async function fetchGroup(){
     try{
@@ -40,6 +44,7 @@ export  function Groups() {
   console.log("useFocusEffect executou")
   fetchGroup();
 }, []));
+
 
   return (
     <Container>
@@ -68,6 +73,7 @@ export  function Groups() {
     /> 
       <Button
       title = "crie uma nova turma"
+
       onPress={handleNewGroup}
       />
     </Container>

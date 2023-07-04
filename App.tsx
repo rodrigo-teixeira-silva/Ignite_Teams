@@ -4,6 +4,9 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/r
 
 import { Loading } from '@components/Loading';
 
+
+import theme from './src/theme'
+
 import { Routes } from './src/Routes';
 
 import theme from './src/theme'
@@ -21,11 +24,11 @@ export default function App() {
         translucent
 
       />
+
     { fontsLoaded ?  <Routes/> : <Loading/>} 
+
     </ThemeProvider>
 );
-
-
 
 
   }
