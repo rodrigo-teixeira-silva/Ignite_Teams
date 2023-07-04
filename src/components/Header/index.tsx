@@ -1,24 +1,30 @@
-import { TouchableOpacityProps } from "react-native";
-import { MaterialIcons} from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
+import { Container, Logo, BackIcon, BackButton } from './styles';
 
+import logoImg from '@assets/logo.png';
 
-import { Container, Icon, ButtonIconTypesStyleProps } from "./styles";
-
-type Props = TouchableOpacityProps & {
-   icon: keyof typeof MaterialIcons.glyphMap;
-    type?:ButtonIconTypesStyleProps
+type Props = {
+    showBackButton?: Boolean;
 }
 
-export function ButtonIcon ({icon, type ='PRIMARY', ...rest}: Props){
+export function Header({ showBackButton = false}: Props){
+    const navigation = useNavigation();
+
+   function handleGoBack(){
+    navigation.navigate('groups'); 
+   }
+
     return(
-    <Container {...rest}>
-        
-        <Icon
-         name={icon}
-         type={type}
-        />
-        
+        <Container>
+         {
+        showBackButton &&
+        <BackButton onPress={handleGoBack}>
+            <BackIcon/>
+        </BackButton>
+         }
+         
+        <Logo source = {logoImg}/>
     </Container>
 );
 
