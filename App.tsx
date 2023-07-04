@@ -5,15 +5,12 @@ import { useFonts, Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/r
 import { Loading } from '@components/Loading';
 
 
-import { Groups } from '@screens/Groups';
-
 import theme from './src/theme'
 
 import { Routes } from './src/Routes';
 
 import theme from './src/theme'
 import { AppRoutes } from 'src/Routes/app.routes';
-
 
 export default function App() {
   const [fontsLoaded] = useFonts({ Roboto_400Regular,Roboto_700Bold });
@@ -28,12 +25,10 @@ export default function App() {
 
       />
 
-    { fontsLoaded ?  <Groups/> : <Loading/>} 
+    { fontsLoaded ?  <Routes/> : <Loading/>} 
 
     </ThemeProvider>
 );
-
-
 
 
   }

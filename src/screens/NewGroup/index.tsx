@@ -1,42 +1,66 @@
-import { Header } from "@components/Header";
+import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+import { AppError } from "@utils/AppError";
+import { groupCreate } from "@storage/group/groupCreate";
+import { Alert } from 'react-native'
+
 import { Container, Content, Icon} from "./styles";
-import { Highlight } from "@components/Highlight";
-import { Button } from "@components/Button";
 
 import { Input } from "@components/Input";
-import { useNavigation } from "@react-navigation/native";
+import { Button } from "@components/Button";
+import { Header } from "@components/Header";
+
+import { Highlight } from "@components/Highlight";
+
 
 export function NewGroup (){
-    const navigation =useNavigation();
+const [group, setGroup] = useState('');
 
-function handleNew(){
-    navigation.navigate("players", {group: "devs"});
+const navigation =useNavigation();
+
+ async function handleNew(){
+    
+    try{
+    if(group.trim().length === 0){
+    return Alert.alert('Novo Grupo', 'Informe o nome da turma.');
 }
 
-    return(
-        <Container>
-           <Header  showBackButton />
-           <Content>
-                <Icon/>
+    await groupCreate(group);
+    navigation.navigate("players", { group });
+
+    }catch(error){
+        if(Error instanceof AppError){
+    Alert.alert('novo grupo', Error.message);
+    }else{
+        Alert.alert('novo grupo', 'Não foi possível criar um novo grupo');
+        console.log(error);
+        }
+    }
+    
+
+}
+return(
+    <Container>
+       <Header  showBackButton />
+       <Content>
+            <Icon/>
                 <Highlight
                     title ="Nova Turma"
                     subtitle="Crie a Turma Para adicionar as Pessos"
                 />
             <Input
                 placeholder="Nome da turma "
+                onChangeText={setGroup}
             
             />
 
-            <Button
+        <Button
                 title="Criar"
-
                 style={{marginTop: 20 }}
                 onPress={handleNew}
-
             />
-           </Content>
-        </Container>
-
-    );
+        </Content>
+</Container>
+);
 
 }
