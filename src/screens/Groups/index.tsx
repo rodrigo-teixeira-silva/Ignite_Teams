@@ -12,7 +12,6 @@ import { Button } from '@components/Button';
 
 import { Container } from './styles';
 
-
 export  function Groups() {
 
   const [groups, setGroups] = useState<string[]>([]);
@@ -22,7 +21,6 @@ export  function Groups() {
   function handleNewGroup() {
     navigation.navigate('new');
   }
-
 
   async function fetchGroup(){
     try{
