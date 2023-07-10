@@ -6,7 +6,6 @@ import { useRoute } from "@react-navigation/native";
 import { AppError } from "@utils/AppError";
 
 import { PlayerAddByGroup } from "@storage/player/playerAddByGroup";
-import {playerGetByGroupAndTeams } from "@storage/player/playersGetGroupAndTeam";
 import { PlayerStorageDTO } from "@storage/player/PlayerStorageDTO"; 
 
 import { Input } from "@components/Input";
