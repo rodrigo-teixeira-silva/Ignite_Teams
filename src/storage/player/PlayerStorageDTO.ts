@@ -1,4 +1,4 @@
-export type PayerStorageDTO = {
+export type PlayerStorageDTO = {
     name:string;
-    team: string
+    team: string;
 }
