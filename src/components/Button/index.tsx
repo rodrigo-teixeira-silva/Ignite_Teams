@@ -7,7 +7,6 @@ type Props = TouchableOpacityProps & {
     type?: ButtonTypeStyleProps;
 }
 
-
 export function Button({title, type = `PRIMARY`, ...rest }: Props) {
 
 
