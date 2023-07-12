@@ -10,6 +10,8 @@ import { groupRemoveByName } from '@storage/group/groupeRemoveByName';
 import { playersRemoveByGroup } from '@storage/player/playerRemoveByGroups';
 import { playersGetByGroupAndTeam } from '@storage/player/playersGetByGroupsAndTeam';
 
+import { AppError } from "@utils/AppError";
+
 import { Input } from "@components/Input";
 import { Button } from '@components/Button';
 import { Filter } from "@components/Filter";
