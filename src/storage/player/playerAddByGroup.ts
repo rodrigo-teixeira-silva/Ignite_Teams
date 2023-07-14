@@ -20,7 +20,8 @@ export async function PlayerAddByGroup(newPlayer:PlayerStorageDTO, group: string
 
         const storage = JSON.stringify([...storedPlayers, newPlayer]);
 
-        await AsyncStorage.setItem (`${PLAYER_COLLECTION}-${group}`,'');
+        await AsyncStorage.setItem (`${PLAYER_COLLECTION}-${group}`,storage);
+        
         }catch(error){
         throw (error);
         }
