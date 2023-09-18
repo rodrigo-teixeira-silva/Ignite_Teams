@@ -29,9 +29,9 @@ getting-started)
 - [Babel -plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver#readme)
 
 - [Use google fonts](https://docs.expo.dev/develop/user-interface/fonts/#use-a-google-font)
--[phosphor icons](https://phosphoricons.com)
+- [phosphor icons](https://phosphoricons.com)
 - [React Navigation](https://reactnavigation.org)
--[Image picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
+- [Image picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
 - [NPM](https://docs.npmjs.com)
 
 
@@ -67,7 +67,7 @@ Pré-requisitos: npm
 
 Rodrigo Teixeira Silva
 
-<img style = "width:200px" src="https://github.com/linkdri1.png" alt="Imegem desenvolvedor" >
+<img style = "width:200px" src="https://github.com/rodrigo-teixeira-silva.png" alt="Imagem desenvolvedor" >
 
 ## [Linkedin](https://www.linkedin.com/in/rodrigo-teixeira-silva/)
 
