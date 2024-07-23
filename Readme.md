@@ -12,11 +12,10 @@ Projeto Ignite Teams. A proposta de ajudar a organizar pessoas que se reúnem pa
 
 
 ## Layout mobile
-![Tela Turmas](./assets/imagem-1.png)
 
-![Tela Novas Turmas](./assets/imagem-2.png)
-
-![Tela Times](./assets/imagem-3.png)
+|  Tela turmas  | Tela novas turmas |  Tela de times   |
+| ------------- | ----------------- | ---------------- | 
+| <img src="./assets/imagem-1.png" width="200px" height="400px" style="padding-right: 10px;"/> | <img src="./assets/imagem-2.png" width="200px" height="400px" style="padding-left: 10px;"/> | <img src="./assets/imagem-3.png" width="200px" height="400px" style="padding-left: 10px;"/> |
 
 # Tecnologias utilizadas
 ## Aplicação
